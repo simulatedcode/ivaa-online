@@ -1,6 +1,6 @@
 <script setup>
 import { Head } from "@inertiajs/inertia-vue3";
-import NavBar from "@/Components/NavBar.vue";
+import NavBar from "@/Components/Frontend/NavBar.vue";
 import LogoIVAA from "@/Components/LogoIVAA.vue";
 
 defineProps({
