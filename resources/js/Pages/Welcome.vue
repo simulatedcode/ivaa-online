@@ -16,11 +16,13 @@ defineProps({
     <div class="relative bg-gray-100 min-h-screen dark:bg-[#111600]">
         <NavBar />
         <section class="relative overflow-hidden pt-28 pb-20 dark:bg-[#111600]">
-            <div class="max-w-3xl mx-auto min-h-screen">
+            <div class="lg:max-w-3xl mx-auto min-h-screen px-6">
                 <h1
-                    class="text-5xl font-bold text-center md:text-6xl lg:text-7xl"
+                    class="text-5xl mx-auto font-bold text-center md:text-6xl lg:text-7xl"
                 >
-                    Discover the digital archive of Indonesian contemporary art
+                    Discover the digital
+                    <br class="hidden lg:inline" />
+                    <span>archive of Indonesian contemporary art</span>
                 </h1>
                 <p
                     class="mt-6 max-w-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10"
