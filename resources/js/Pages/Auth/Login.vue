@@ -1,7 +1,7 @@
 <script setup>
 import { Head, Link, useForm } from "@inertiajs/inertia-vue3";
 import AuthenticationCard from "@/Components/AuthenticationCard.vue";
-import LogoIVAA from "@/Components/LogoIVAA.vue";
+import LoginLogoIVAA from "@/Components/LoginLogoIVAA.vue";
 import Checkbox from "@/Components/Checkbox.vue";
 import InputError from "@/Components/InputError.vue";
 import InputLabel from "@/Components/InputLabel.vue";
@@ -34,7 +34,10 @@ const submit = () => {
 
     <AuthenticationCard>
         <template #logo>
-            <LogoIVAA />
+            <Link href="/">
+                <LoginLogoIVAA class="block h-24 mx-auto pb-8" />
+            </Link>
+            <h1 class="mt-4 mb-4 font-bold text-lg text-center">Login Page</h1>
         </template>
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">

@@ -1,12 +1,12 @@
 <script setup>
-import LogoIVAA from "@/Components/LogoIVAA.vue";
+import LoginLogoIVAA from "@/Components/LoginLogoIVAA.vue";
 </script>
 
 <template>
     <div>
         <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
             <div>
-                <LogoIVAA class="block h-12 w-auto" />
+                <LoginLogoIVAA class="block h-12 w-auto" />
             </div>
 
             <div class="mt-8 text-2xl">
