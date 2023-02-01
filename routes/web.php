@@ -24,6 +24,18 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/collection', function () {
+  return Inertia::render('Frontend/Collection');
+});
+
+Route::get('/about', function (){
+  return Inertia::render('Frontend/About');
+});
+
+Route::get('/resources', function (){
+  return Inertia::render('Frontend/Resources');
+});
+
 Route::middleware(['auth:sanctum','verified',])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');

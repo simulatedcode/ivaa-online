@@ -8,15 +8,22 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
         <nav class="flex items-center mx-auto max-w-7xl pt-8 px-6">
             <!-- Archive Header outline -->
             <div class="flex text-white mr-12">
-                <LogoIVAA />
+                <Link href="/"><LogoIVAA /></Link>
             </div>
             <div class="hidden md:flex text-gray-700 mr-12">
                 <ul class="flex space-x-6">
                     <li>
-                        <Link class="hover:text-purple-600">About</Link>
+                        <Link href="/" class="hover:text-purple-600">Home</Link>
                     </li>
+                    <li>
+                        <Link href="/about" class="hover:text-purple-600"
+                            >About</Link
+                        >
+                    </li>
+
                     <li class="flex">
                         <Link
+                            href="/collection"
                             class="flex items-center gap-2 hover:text-purple-600"
                         >
                             <svg width="1em" height="1em" viewBox="0 0 32 32">
@@ -33,10 +40,9 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
                         </Link>
                     </li>
                     <li>
-                        <Link class="hover:text-purple-600">Resources</Link>
-                    </li>
-                    <li>
-                        <Link class="hover:text-purple-600">Event</Link>
+                        <Link href="/resources" class="hover:text-purple-600"
+                            >Resources</Link
+                        >
                     </li>
                 </ul>
             </div>
