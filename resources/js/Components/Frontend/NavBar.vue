@@ -5,18 +5,25 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
 
 <template>
     <div class="relative">
-        <nav class="flex items-center mx-auto max-w-7xl pt-8">
+        <nav class="flex items-center mx-auto max-w-7xl pt-8 px-6">
             <!-- Archive Header outline -->
             <div class="flex text-white mr-12">
-                <LogoIVAA />
+                <Link href="/"><LogoIVAA /></Link>
             </div>
-            <div class="flex text-gray-700 mr-12">
+            <div class="hidden md:flex text-gray-700 mr-12">
                 <ul class="flex space-x-6">
                     <li>
-                        <Link class="hover:text-purple-600">About</Link>
+                        <Link href="/" class="hover:text-purple-600">Home</Link>
                     </li>
+                    <li>
+                        <Link href="/about" class="hover:text-purple-600"
+                            >About</Link
+                        >
+                    </li>
+
                     <li class="flex">
                         <Link
+                            href="/collection"
                             class="flex items-center gap-2 hover:text-purple-600"
                         >
                             <svg width="1em" height="1em" viewBox="0 0 32 32">
@@ -33,16 +40,15 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
                         </Link>
                     </li>
                     <li>
-                        <Link class="hover:text-purple-600">Resources</Link>
-                    </li>
-                    <li>
-                        <Link class="hover:text-purple-600">Event</Link>
+                        <Link href="/resources" class="hover:text-purple-600"
+                            >Resources</Link
+                        >
                     </li>
                 </ul>
             </div>
-            <div class="relative w-full">
+            <div class="relative w-full md:flex md:justify-between">
                 <div
-                    class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                    class="hidden md:inset-y-0 md:left-0 absolute items-center pl-3 pointer-events-none md:flex"
                 >
                     <svg
                         aria-hidden="true"
@@ -64,7 +70,7 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
                     type="seach"
                     placeholder="Search Artist, Artwork, Event & Document"
                     required
-                    class="block w-full p-2 pl-10 rounded-lg bg-[#CEC9C5] focus:outline-none"
+                    class="hidden md:block p-2 pl-10 rounded-lg bg-[#CEC9C5] focus:outline-none md:w-full"
                 />
             </div>
         </nav>
