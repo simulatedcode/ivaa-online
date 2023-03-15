@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ArtistController extends Controller
+class DocumentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ArtistController extends Controller
      */
     public function index()
     {
-      return 'artists.index';
+        return 'documents.index';
     }
 
     /**

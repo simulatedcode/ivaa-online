@@ -67,6 +67,33 @@ const logout = () => {
                                 >
                                     Artists
                                 </NavLink>
+                                <NavLink
+                                    :href="route('collectives.index')"
+                                    :active="
+                                        route().current('collectives.index')
+                                    "
+                                >
+                                    Collectives
+                                </NavLink>
+
+                                <NavLink
+                                    :href="route('events.index')"
+                                    :active="route().current('events.index')"
+                                >
+                                    Events
+                                </NavLink>
+                                <NavLink
+                                    :href="route('artworks.index')"
+                                    :active="route().current('artworks.index')"
+                                >
+                                    Artworks
+                                </NavLink>
+                                <NavLink
+                                    :href="route('documents.index')"
+                                    :active="route().current('documents.index')"
+                                >
+                                    Documents
+                                </NavLink>
                             </div>
                         </div>
 

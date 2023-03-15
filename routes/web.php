@@ -1,6 +1,12 @@
 <?php
 
 use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\ArtworkController;
+use App\Http\Controllers\CollectiveController;
+use App\Http\Controllers\DocumentController;
+use App\Models\Artwork;
+use App\Models\Collective;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -33,8 +39,8 @@ Route::get('/about', function (){
   return Inertia::render('Frontend/About');
 });
 
-Route::get('/resources', function (){
-  return Inertia::render('Frontend/Resources');
+Route::get('/archive', function (){
+  return Inertia::render('Frontend/Archive');
 });
 
 Route::middleware(['auth:sanctum','verified',])->group(function () {
@@ -43,4 +49,8 @@ Route::middleware(['auth:sanctum','verified',])->group(function () {
   })->name('dashboard');
 
   Route::resource('/artists', ArtistController::class);
+  Route::resource('/events', EventController::class);
+  Route::resource('/artworks', ArtworkController::class);
+  Route::resource('/collectives', CollectiveController::class);
+  Route::resource('/documents', DocumentController::class);
 });

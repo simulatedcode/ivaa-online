@@ -23,7 +23,7 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
 
                     <li class="flex">
                         <Link
-                            href="/collection"
+                            href="/archive"
                             class="flex items-center gap-2 hover:text-purple-600"
                         >
                             <svg width="1em" height="1em" viewBox="0 0 32 32">
@@ -36,12 +36,14 @@ import LogoIVAA from "@/Components/LogoIVAA.vue";
                                     d="M28 4H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-2 24H6V12h20Zm2-18H4V6h24v4Z"
                                 ></path>
                             </svg>
-                            Collection
+                            Archive
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resources" class="hover:text-purple-600"
-                            >Resources</Link
+                        <Link
+                            href="http://library.ivaa-online.org"
+                            class="hover:text-purple-600"
+                            >Catalogue</Link
                         >
                     </li>
                 </ul>
