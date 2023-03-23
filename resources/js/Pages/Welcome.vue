@@ -1,5 +1,5 @@
 <script setup>
-import { Head } from '@inertiajs/inertia-vue3';
+import { Head } from "@inertiajs/inertia-vue3";
 import NavBar from "@/Components/Frontend/NavBar.vue";
 import LogoIVAA from "@/Components/LogoIVAA.vue";
 
@@ -66,12 +66,7 @@ defineProps({
                             under a Creative Commons BY-NC Unported License.
                         </p>
                         <br />
-                        <p>
-                            Copyright © 2022. Made with Laravel v{{
-                                laravelVersion
-                            }}
-                            (PHP v{{ phpVersion }})
-                        </p>
+                        <p>Copyright © 2022. Made with Laravel</p>
                     </div>
                 </div>
             </div>

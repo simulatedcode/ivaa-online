@@ -1,6 +1,6 @@
 <script setup>
 import { Link } from "@inertiajs/inertia-vue3";
-import LogoOA from "@/Components/LogoOA.vue";
+import LogoIVAA from "@/Components/LogoIVAA.vue";
 </script>
 
 <template>
@@ -8,7 +8,8 @@ import LogoOA from "@/Components/LogoOA.vue";
         <div
             class="overflow-y-auto overflow-x-hidden px-4 py-6 lg:overflow-hidden lg:px-8 xl:px-16"
         >
-            <Link href="/"><LogoOA /> </Link>
+            <Link href="/"><LogoIVAA /></Link>
+
             <div class="pt-8">
                 <ul class="divide-y py-2 divide-gray-200 space-y-2 font-medium">
                     <li class="hover:indent-2 transition cursor-pointer">
