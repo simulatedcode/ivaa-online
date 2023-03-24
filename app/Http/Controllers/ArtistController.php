@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artist;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ArtistController extends Controller
 {
@@ -13,7 +15,7 @@ class ArtistController extends Controller
      */
     public function index()
     {
-      return 'artists.index';
+    return Inertia::render('Admin/Artists/Index');     
     }
 
     /**
