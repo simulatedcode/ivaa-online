@@ -8,7 +8,8 @@ import Footer from "@/Components/Frontend/Footer.vue";
     <Head title="Archive" />
     <div class="relativ min-h-screen backdrop-filter backdrop-blur-lg dark:bg-[#111600]">
         <NavBar />
-        <!-- Card 1 -->
+    <!-- Card 1 -->
+    <a href="">
         <div class="relative mt-10">
             <div class="relative lg:flex overflow-hidden">
                 <div class="h-50 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
@@ -27,7 +28,9 @@ import Footer from "@/Components/Frontend/Footer.vue";
                 </div>
             </div>
         </div>
-        <!-- Card 2 -->
+    </a>
+     <!-- Card 2 -->
+     <a href="">
         <div class="relative">
             <div class="relative lg:flex overflow-hidden">
                 <div class="relative lg:w-8/12">
@@ -47,7 +50,9 @@ import Footer from "@/Components/Frontend/Footer.vue";
                 </div>
             </div>
         </div>
-        <!-- Card 3 -->
+    </a>
+    <!-- Card 3 -->
+    <a href="">
         <div class="relative">
             <div class="relative lg:flex overflow-hidden">
                 <div class="h-50 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
@@ -64,7 +69,9 @@ import Footer from "@/Components/Frontend/Footer.vue";
                 </div>
             </div>
         </div>
-        <!-- Card 4 -->
+    </a>
+    <!-- Card 4 -->
+    <a href="">
         <div class="relative">
             <div class="relative lg:flex overflow-hidden">
                 <div class="relative lg:w-8/12">
@@ -81,7 +88,9 @@ import Footer from "@/Components/Frontend/Footer.vue";
                 </div>
             </div>
         </div>
-        <!-- Card 5 -->
+    </a>
+    <!-- Card 5 -->
+    <a href="">
         <div class="relative">
             <div class="relative lg:flex overflow-hidden" id="test">
                 <div class="h-50 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
@@ -98,5 +107,6 @@ import Footer from "@/Components/Frontend/Footer.vue";
                 </div>
             </div>
         </div>
+    </a>
         <Footer />
 </div></template>
